@@ -1,0 +1,39 @@
+.widget {
+	margin: 0;
+	padding: 0 0 20px;
+}
+.widget-footer {
+	float: left;
+	width: 33%;
+	margin: 0;
+	padding: 0 0 20px;
+}
+.widget-title {
+	color: $text;
+	text-align: left;
+}
+.widget ul {
+	margin: 0;
+	list-style: none;
+	li {
+		margin-left: 1.5em;
+	}
+}
+
+/* Special Classes */
+.no-border {
+	border-bottom: none;
+	margin-bottom: 0;
+	padding:  0;
+}
+
+/* Search Widget */
+.widget_search {
+	form {
+		margin: 0 0 10px;
+	}
+	#s {
+		width: 95%;
+		display: inline-block;
+	}
+}

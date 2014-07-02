@@ -1,0 +1,26 @@
+@import "home";
+
+.page-link {
+	clear: both;
+	display: block;
+	margin: 0 0 1.5em;
+	span {
+		margin-right: 6px;
+	}
+}
+
+.bio-left {
+	float: left;
+	padding-right: 2%;
+}
+.bio-right {
+	float: right;
+	padding-left: 2%;
+}
+.bio-left,
+.bio-right {
+	width: 48%;
+	img {
+		max-width: 100%,
+	}
+}

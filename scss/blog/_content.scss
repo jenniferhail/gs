@@ -1,0 +1,23 @@
+.entry-title,
+.entry-title a {
+	clear: both;
+	color: $links;
+	line-height: 1.25em;
+	padding-bottom: 0.5em;
+}
+.entry-meta {
+	clear: both;
+}
+.entry-date {
+	font-size: 16px;
+	padding-bottom: 2px;
+	font-family: $heading;
+}
+
+/* Handle sticky posts */
+.sticky {	
+}
+
+.archive-title {
+	margin-bottom: 15px;
+}
