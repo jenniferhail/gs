@@ -10,5 +10,9 @@
 	h1 {
 		width: 33.33%;
 		margin: 0 auto;
+	    @include respond-to(handhelds) { width: auto; max-width: 275px; }
+	    @include respond-to(tablets) { width: auto; max-width: 275px; }
+	    @include respond-to(medium-screens) { width: 33.33%; }
+	    @include respond-to(wide-screens) { width: 33.33%; }
 	}
 }

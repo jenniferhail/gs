@@ -56,6 +56,20 @@ body {
 	float: left;
 	margin: 0;
 	width: 70%;	
+    @include respond-to(handhelds) { width: 100%; }
+    @include respond-to(tablets) { width: 100%; }
+    @include respond-to(medium-screens) { width: 70%; }
+    @include respond-to(wide-screens) { width: 70%; }
+}
+#secondary {
+    float: right;
+    padding-left: 5%;
+    margin: 0 0 50px 0;
+    width: 25%;
+    @include respond-to(handhelds) { width: 100%; }
+    @include respond-to(tablets) { width: 100%; } 
+    @include respond-to(medium-screens) { width: 25%; padding-left: 5%; }
+    @include respond-to(wide-screens) { width: 25%; padding-left: 5%; }
 }
 #content {
 	margin: 0;
@@ -75,15 +89,34 @@ body {
         -moz-column-gap: 30px;
         column-count: 2;
         column-gap: 30px;
+        @include respond-to(handhelds) { 
+            -webkit-column-count: 1;
+            -webkit-column-gap: 0;
+            -moz-column-count: 1;
+            -moz-column-gap: 0;
+            column-count: 1;
+            column-gap: 0;
+        }
+        @include respond-to(medium-screens) { 
+            -webkit-column-count: 1;
+            -webkit-column-gap: 0;
+            -moz-column-count: 1;
+            -moz-column-gap: 0;
+            column-count: 1;
+            column-gap: 0;
+        }
+        @include respond-to(wide-screens) { 
+            -webkit-column-count: 2;
+            -webkit-column-gap: 30px;
+            -moz-column-count: 2;
+            -moz-column-gap: 30px;
+            column-count: 2;
+            column-gap: 30px;
+        }
     }
 }
 .home {
 	text-align: center;
-}
-#secondary {
-	float: right;
-	padding-left: 5%;
-	width: 25%;
 }
 #colophon {
 	clear: both;

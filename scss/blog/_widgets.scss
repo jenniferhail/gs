@@ -3,10 +3,15 @@
 	padding: 0 0 20px;
 }
 .widget-footer {
-	float: left;
-	width: 33%;
 	margin: 0;
 	padding: 0 0 20px;
+	float: left;
+	width: 33%;
+	@include respond-to(handhelds) { width: 100%; }
+	@include respond-to(tablets) { width: 100%; }
+	@include respond-to(medium-screens) { width: 100%; }
+	@include respond-to(wide-screens) { width: 33%; }
+
 }
 .widget-title {
 	color: $text;

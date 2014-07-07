@@ -40,19 +40,26 @@
  
 <body <?php body_class(); ?>>
 <div id="page">
-   <header id="site-header" role="banner">            
-              <nav id="leftmenu" class="navigation" role="navigation">
-                  <?php wp_nav_menu( array( 'theme_location' => 'leftmenu' ) ); ?>
-              </nav><!-- #access -->    
-              <h1>
-                  <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-                      <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="<?php bloginfo('name'); ?>" />
-                  </a>
-              </h1>
-              <nav id="rightmenu" class="navigation" role="navigation">
-                  <?php wp_nav_menu( array( 'theme_location' => 'rightmenu' ) ); ?>
-              </nav><!-- #access -->  
-      </header><!-- #branding -->
+    <header id="site-header" role="banner">
+      <a href="#" onclick="toggle_visibility('responsivemenu');"><span class="menu-icon">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>        
+      </span></a>
+      <nav id="responsivemenu" class="navigation" role="navigation">
+        <?php wp_nav_menu( array( 'theme_location' => 'responsivemenu' ) ); ?>
+      </nav><!-- #access -->              
+      <nav id="leftmenu" class="navigation" role="navigation">
+        <?php wp_nav_menu( array( 'theme_location' => 'leftmenu' ) ); ?>
+      </nav><!-- #access -->    
+      <h1>
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+          <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="<?php bloginfo('name'); ?>" />
+        </a>
+      </h1>
+      <nav id="rightmenu" class="navigation" role="navigation">
+        <?php wp_nav_menu( array( 'theme_location' => 'rightmenu' ) ); ?>
+      </nav><!-- #access -->
+    </header><!-- #branding -->
    
-   
-      <div id="main">
+    <div id="main">

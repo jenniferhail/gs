@@ -30,6 +30,7 @@ function gildersleeve_setup() {
 	// Add custom nav menu support
 	register_nav_menu( 'leftmenu', __( 'Left Menu', 'gildersleeve' ) );
 	register_nav_menu( 'rightmenu', __( 'Right Menu', 'gildersleeve' ) );
+    register_nav_menu( 'responsivemenu', __( 'Responsive Menu', 'gildersleeve' ) );
 	
 	// Add featured image support
 	add_theme_support( 'post-thumbnails' );
@@ -506,7 +507,8 @@ function gildersleeve_customize_css()
             .navigation ul li a:hover {
                 color: <?php echo $options['h1_color']; ?>;
             }
-            .current-menu-item a {
+            #leftmenu .current-menu-item a,
+            #rightmenu .current-menu-item a {
                 border-bottom: 1px solid <?php echo $options['h1_color'] ?>;
             }
             input[type="submit"] {

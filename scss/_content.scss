@@ -1,5 +1,4 @@
 .hentry {
-	//border-bottom: $border;
 	margin: 0 0 45px;
 	padding: 0 0 40px;
 	position: relative;
@@ -8,6 +7,10 @@
 	.page & {
 		border-bottom: none;
 	}
+	@include respond-to(handhelds) { margin: 0; }
+	@include respond-to(tablets) { margin: 0; }	
+	@include respond-to(medium-screens) { margin: 0 0 45px; }
+	@include respond-to(wide-screens) { margin: 0 0 45px; }
 }
 
 .entry-content,
@@ -19,6 +22,10 @@
 	.entry-summary,
 	.entry-meta {
 		padding: 20px 0 0 30px;
+		@include respond-to(handhelds) { padding: 20px 0 0 0; }
+		@include respond-to(tablets) { padding: 20px 0 0 0; }	
+		@include respond-to(medium-screens) { padding: 20px 0 0 30px; }
+		@include respond-to(wide-screens) { padding: 20px 0 0 30px; }
 	}
 }
 .entry-content {

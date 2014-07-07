@@ -27,6 +27,30 @@
 	position: absolute;
 	top: 95px;
 	width: 33.33%;
+    @include respond-to(handhelds) { display: none; }
+    @include respond-to(tablets) { display: none; }
+    @include respond-to(medium-screens) { display: inherit; }
+    @include respond-to(wide-screens) { display: inherit; }		
+}
+#responsivemenu {
+	margin: 0 auto 15px;
+	ul li {
+		display: block;
+		a {
+			line-height: 2;
+			font-size: 16px;
+		}
+	}
+	.current-menu-item a {
+		color: $headings;
+	}
+	-webkit-animation: fadein .5s;
+	-moz-animation: fadein .5s;
+	animation: fadein .5s;
+    @include respond-to(handhelds) { display: none; }
+    @include respond-to(tablets) { display: none; }
+    @include respond-to(medium-screens) { display: none; }
+    @include respond-to(wide-screens) { display: none; }			
 }
 .navigation {
 	margin: 0;
@@ -54,4 +78,32 @@
 			}
 		}	
 	}
+}
+.menu-icon {
+	display: none;
+	width: 30px;
+	height: 25px;
+	padding-top: 0;
+	margin: 0;
+	float: right;
+	position: absolute;
+	right: 15px;
+	top: 0;
+	z-index: 300;
+	.line {
+		display: block;
+		height: 5px;
+		background-color: $hover;
+		margin-top: 5px;
+	}
+	&:hover {
+		cursor: pointer;
+		.line {
+			background-color: $headings;
+		}
+	}
+    @include respond-to(handhelds) { display: block; }
+    @include respond-to(tablets) { display: block; }
+    @include respond-to(medium-screens) { display: none; }
+    @include respond-to(wide-screens) { display: none; }
 }

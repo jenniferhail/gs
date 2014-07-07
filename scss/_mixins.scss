@@ -17,6 +17,10 @@
   }
   #{$footer-selector} {
     height: $footer-height; 
+    @include respond-to(handhelds) { height: $footer-height + 115; }
+    @include respond-to(tablets) { height: $footer-height + 115; }
+    @include respond-to(medium-screens) { height: $footer-height + 115; }
+    @include respond-to(wide-screens) { height: $footer-height; }
   }
 }
 
