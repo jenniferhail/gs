@@ -1,7 +1,5 @@
-$(document).ready(function($){
- 
-	$('#main').fadeIn(500);
- 
+jQuery(document).ready(function($){
+ 	$('#main').fadeIn(500);
 });
 
 function toggle_visibility(id) {

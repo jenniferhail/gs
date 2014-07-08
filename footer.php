@@ -20,5 +20,17 @@
 </footer><!-- #colophon -->
 
 <?php wp_footer(); ?>
+
+<script>
+jQuery(document).ready(function($){
+  $("#grid").masonry({
+    itemSelector: ".item",
+    gutter: 15,
+    isFitWidth: true,
+    isResizable: true
+  });
+});
+</script>
+
 </body>
 </html>

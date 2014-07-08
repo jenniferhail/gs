@@ -107,6 +107,16 @@ function gildersleeve_scripts() {
 		get_template_directory_uri() . '/assets/theme.js',
 		array('jquery')
 	);
+    wp_enqueue_script(
+        'masonry',
+        get_template_directory_uri() . '/assets/vendor/masonry.pkgd.min.js',
+        array('jquery')
+    );
+    wp_enqueue_script(
+        'imagesLoaded',
+        get_template_directory_uri() . '/assets/vendor/imagesloaded.pkgd.min.js',
+        array('jquery')
+    );
 }    
 add_action('wp_enqueue_scripts', 'gildersleeve_scripts');
 

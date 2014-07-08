@@ -97,6 +97,14 @@ body {
             column-count: 1;
             column-gap: 0;
         }
+        @include respond-to(tablets) { 
+            -webkit-column-count: 1;
+            -webkit-column-gap: 0;
+            -moz-column-count: 1;
+            -moz-column-gap: 0;
+            column-count: 1;
+            column-gap: 0;
+        }        
         @include respond-to(medium-screens) { 
             -webkit-column-count: 1;
             -webkit-column-gap: 0;
