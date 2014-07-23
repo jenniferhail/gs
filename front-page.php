@@ -17,19 +17,19 @@ get_header(); ?>
 		
 		<div id="grid">
 
-			<div class="item">
+			<div class="item left">
 				<?php if( get_field('image_one') ): ?>
 					<img src="<?php the_field('image_one'); ?>" class="image_one" />
 				<?php endif; ?>
 			</div>
 
-			<div class="item">
+			<div class="item right">
 				<?php if( get_field('image_two') ): ?>
 					<img src="<?php the_field('image_two'); ?>" class="image_two" />
 				<?php endif; ?>
 			</div>
 
-			<div class="item textbox"><?php the_content(); ?></div>
+			<div class="item right textbox"><?php the_content(); ?></div>
 
 			<div class="item wide">
 				<?php if( get_field('image_three') ): ?>
@@ -37,13 +37,13 @@ get_header(); ?>
 				<?php endif; ?>
 			</div>
 
-			<div class="item">
+			<div class="item left">
 				<?php if( get_field('image_four') ): ?>
 					<img src="<?php the_field('image_four'); ?>" class="image_four" />
 				<?php endif; ?>
 			</div>
 
-			<div class="item">
+			<div class="item right">
 				<?php if( get_field('image_five') ): ?>
 					<img src="<?php the_field('image_five'); ?>" class="image_five" />
 				<?php endif; ?>

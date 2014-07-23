@@ -7,8 +7,11 @@ body {
 	box-sizing: border-box;
 }
 #page {
-	padding: 0 2%;
 	margin: 0 auto;
+    @include respond-to(handhelds) { padding: 0 4%; }
+    @include respond-to(tablets) { padding: 0 4%; }
+    @include respond-to(medium-screens) { padding: 0 4%; }
+    @include respond-to(wide-screens) { padding: 0 2%; }
 }
 #main {
 	clear: both;

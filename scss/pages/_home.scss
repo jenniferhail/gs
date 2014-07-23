@@ -3,34 +3,51 @@
 }
 #grid {
 	margin: 0 auto;
-	width: 100%;
-	max-width: 1028px;
 	overflow: hidden;
+	@include respond-to(handhelds) { width: 100%; max-width: 320px; }
+	@include respond-to(tablets) { width: 100%; max-width: 768px; }
+	@include respond-to(medium-screens) { width: 715px; max-width: 1028px; }
+	@include respond-to(wide-screens) { width: 100%; max-width: 1028px; }
 }
 .item {
-	float: left;
 	margin: 0 auto 10px auto;
 	text-align: center;
-	@include respond-to(handhelds) { width: 300px; }
-    @include respond-to(tablets) { width: 100%; }
-    @include respond-to(medium-screens) { width: 485.5px; }
-    @include respond-to(wide-screens) { width: 485.5px; }
+	@include respond-to(handhelds) { width: 300px; float: none; }
+    @include respond-to(tablets) { width: 325px; float: none; }
+    @include respond-to(medium-screens) { width: 350px; float: left; }
+    @include respond-to(wide-screens) { width: 485.5px; float: left; }
+}
+.item.left {
+	@include respond-to(handhelds) { margin-right: auto; }
+    @include respond-to(tablets) { margin-right: auto; }
+    @include respond-to(medium-screens) { margin-right: 7.5px; }
+    @include respond-to(wide-screens) { margin-right: 7.5px; }
+}
+.item.right {
+	@include respond-to(handhelds) { margin-left: auto; }
+    @include respond-to(tablets) { margin-left: auto; }
+    @include respond-to(medium-screens) { margin-left: 7.5px; }
+    @include respond-to(wide-screens) { margin-left: 7.5px; }	
 }
 .wide {
 	width: 100%;
 	@include respond-to(handhelds) { width: 300px; }
-    @include respond-to(tablets) { width: 100%; }
-    @include respond-to(medium-screens) { width: 100%; }
+    @include respond-to(tablets) { width: 325px; }
+    @include respond-to(medium-screens) { width: 714px; }
     @include respond-to(wide-screens) { width: 100%; }
 }
 .textbox {
-	height: 286px;
 	background-color: #ddd;
 	color: #000;
 	margin-bottom: 10px;
 	float: left;
 	p {
-		padding: 15% 10%;
+		padding: 0 10%;
 		margin-bottom: 0;
+		@include vertical-align;
 	}
+	@include respond-to(handhelds) { margin-left: auto; height: 202px; float: none; }
+    @include respond-to(tablets) { margin-left: auto; height: 202px; float: none; }
+    @include respond-to(medium-screens) { margin-left: 7.5px; height: 202px; float: left; }
+    @include respond-to(wide-screens) { margin-left: 7.5px; height: 286px; float: left; }	
 }
