@@ -13,7 +13,7 @@
 	margin: 0 auto 10px auto;
 	text-align: center;
 	@include respond-to(handhelds) { width: 300px; float: none; }
-    @include respond-to(tablets) { width: 325px; float: none; }
+    @include respond-to(tablets) { width: 400px; float: none; }
     @include respond-to(medium-screens) { width: 350px; float: left; }
     @include respond-to(wide-screens) { width: 485.5px; float: left; }
 }
@@ -32,7 +32,7 @@
 .wide {
 	width: 100%;
 	@include respond-to(handhelds) { width: 300px; }
-    @include respond-to(tablets) { width: 325px; }
+    @include respond-to(tablets) { width: 400px; }
     @include respond-to(medium-screens) { width: 714px; }
     @include respond-to(wide-screens) { width: 100%; }
 }
