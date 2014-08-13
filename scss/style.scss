@@ -27,10 +27,10 @@ Text Domain: gildersleeve
 @import "reset";
 @import "mixins";
 @import "base";
+@import "responsive";
 
 /* =LAYOUTS
 ------------------ */
-@import "responsive";
 @import "layout";
 @import "header";
 @import "nav";

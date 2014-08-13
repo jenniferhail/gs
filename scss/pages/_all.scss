@@ -8,31 +8,16 @@
 		margin-right: 6px;
 	}
 }
-
-.bio-left {
+.partners {
 	float: left;
-	padding-right: 2%;
-	@include respond-to(handhelds) { float: none; padding-right: 0; }
-	@include respond-to(tablets) { float: none; padding-right: 0; }	
-	@include respond-to(medium-screens) { float: left; padding-right: 2%; }
-	@include respond-to(wide-screens) { float: left; padding-right: 2%; }
-}
-.bio-right {
-	float: right;
-	padding-left: 2%;
-	@include respond-to(handhelds) { float: none; padding-left: 0; }
-	@include respond-to(tablets) { float: none; padding-left: 0; }	
-	@include respond-to(medium-screens) { float: right; padding-left: 2%; }
-	@include respond-to(wide-screens) { float: right; padding-left: 2%; }	
-}
-.bio-left,
-.bio-right {
-	img {
-		max-width: 100%,
-	}
-	width: 48%;	
 	@include respond-to(handhelds) { width: 100%; }
-	@include respond-to(tablets) { width: 100%; }
-	@include respond-to(medium-screens) { width: 48%; }
-	@include respond-to(wide-screens) { width: 48%; }
+	@include respond-to(tablets) { width: 50%; }	
+	@include respond-to(medium-screens) { width: 25%; }
+	@include respond-to(wide-screens) { width: 25%; }
+	img, h4, p {
+		padding: 0 15px;
+	}
+	p {
+		text-align: left;
+	}
 }

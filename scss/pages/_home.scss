@@ -1,13 +1,94 @@
 #container {
 	
 }
+@include respond-to(handhelds) { 
+	#grid {
+		width: 100%; 
+		max-width: 320px; 
+	}
+	.item {
+
+	}
+	.item.left {
+
+	}
+	.item.right {
+
+	}
+	.wide {
+
+	}
+	.textbox {
+
+	}
+}
+@include respond-to(tablets) { 
+	#grid {
+		width: 100%; 
+		max-width: 768px; 
+	}
+	.item {
+
+	}
+	.item.left {
+
+	}
+	.item.right {
+
+	}
+	.wide {
+
+	}
+	.textbox {
+		
+	}	
+}
+@include respond-to(medium-screens) { 
+	#grid {	
+		width: 715px; 
+		max-width: 1028px;
+	}
+	.item {
+
+	}
+	.item.left {
+
+	}
+	.item.right {
+
+	}
+	.wide {
+
+	}
+	.textbox {
+		
+	}
+}
+@include respond-to(wide-screens) { 
+	#grid {
+		width: 100%; 
+		max-width: 1028px;
+	}
+	.item {
+
+	}
+	.item.left {
+
+	}
+	.item.right {
+
+	}
+	.wide {
+
+	}
+	.textbox {
+		
+	}	
+}
+
 #grid {
 	margin: 0 auto;
 	overflow: hidden;
-	@include respond-to(handhelds) { width: 100%; max-width: 320px; }
-	@include respond-to(tablets) { width: 100%; max-width: 768px; }
-	@include respond-to(medium-screens) { width: 715px; max-width: 1028px; }
-	@include respond-to(wide-screens) { width: 100%; max-width: 1028px; }
 }
 .item {
 	margin-bottom: 10px;
@@ -42,9 +123,12 @@
 	margin-bottom: 10px;
 	float: left;
 	p {
-		padding: 0 10%;
+		padding: 10%;
 		margin-bottom: 0;
 		@include vertical-align;
+		line-height: 1.25em;
+		@include respond-to(handhelds) { font-size: 20px; }
+    	@include respond-to(tablets) { font-size: 22px; }
 	}
 	@include respond-to(handhelds) { margin-left: auto; height: 202px; float: none; }
     @include respond-to(tablets) { margin-left: auto; height: 202px; float: none; }

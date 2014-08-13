@@ -9,7 +9,7 @@ get_header(); ?>
 
 		<header class="page-header">
 			<?php if (is_category('articles')) : ?>
-				<h1 class="headline"><?php the_field( 'headline', 9 ); ?></h1>
+				<h1 class="headline"><?php the_field( 'headline', 10 ); ?></h1>
 			<?php elseif (is_category('press')) : ?>
 				<h1 class="headline"><?php the_field( 'headline', 14 ); ?></h1>
 			<?php else : ?>
