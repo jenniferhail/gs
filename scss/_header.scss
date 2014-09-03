@@ -8,7 +8,7 @@
 		max-width: 100%;
 	}
 	h1 {
-		width: 33.33%;
+		width: 28%;
 		margin: 0 auto;
 	    @include respond-to(handhelds) { width: auto; max-width: 275px; }
 	    @include respond-to(tablets) { width: auto; max-width: 275px; }

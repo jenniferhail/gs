@@ -43,9 +43,6 @@ function gildersleeve_setup() {
 		'gallery',
 	) );
 
-	// Enable support for galleries
-	add_theme_support( 'post-formats', array( 'aside', 'gallery' ) );
-
 	// Enable support for a custom header
 	add_theme_support( 'custom-header', array (
 	'flex-width'	=> true,
